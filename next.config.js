@@ -11,6 +11,13 @@ module.exports = {
   images: {
     loader: 'imgix',
     path: '',
+    exportPathMap: async function () {
+    return {
+      '/': { page: '/' },
+      '/about': { page: '/about' },
+      // Add other paths as needed
+    };
+  },
   },
 };
 
