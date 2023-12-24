@@ -1,0 +1,168 @@
+.card {
+    height: 25vw;
+    width: 23%;
+    background: linear-gradient(90deg, white 55%, #000000b0 45%, black 88%);
+    padding: 1%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    /* overflow: hidden; */
+}
+
+.card:hover .imageBox {
+    scale: 1.1;
+}
+
+.card:hover .shadow {
+    transform: translateY(30%);
+    scale: 1.2;
+}
+
+.card h6 {
+    color: black;
+    text-transform: capitalize;
+    background-color: red;
+    color: white;
+    font-size: 1vw;
+    padding: 0.4vw 0.7vw;
+    border-radius: 0.5vw;
+    width: fit-content;
+}
+
+.card h5 {
+    text-transform: capitalize;
+    background-color: transparent;
+    color: black;
+    font-size: 1.4vw;
+    font-weight: 900;
+    padding: 0.3vw 0.5vw;
+    width: fit-content;
+}
+
+.card p {
+    color: rgba(255, 255, 255, 0.9);
+    text-transform: capitalize;
+    /* background-color: aqua; */
+    position: absolute;
+    bottom: 0;
+    left: 90%;
+    width: 190%;
+    font-weight: 700;
+    font-size: 1.1vw;
+    transform-origin: 0 0;
+    transform: rotate(270deg);
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 110%;
+}
+
+.imageBox {
+    height: 70%;
+    width: 100%;
+    /* background-color: blueviolet; */
+    position: relative;
+    transition: 300ms ease-out;
+}
+
+.shadow {
+    height: 7%;
+    width: 100%;
+    margin: 3% 0;
+    position: relative;
+    transition: 300ms ease-out;
+}
+
+.cardHeading {
+    height: fit-content;
+    width: 100%;
+    /* background-color: blue; */
+    padding: 3% 2%;
+    display: flex;
+    justify-content: center;
+}
+
+.cardHeading button {
+    text-transform: uppercase;
+    font-weight: 900;
+    line-height: 1;
+    font-size: 1.5vw;
+    color: white;
+    background-color: black;
+    border: none;
+    padding: 1vw 2vw;
+    cursor: pointer;
+}
+
+
+
+@media only screen and (max-width: 860px) {
+
+    .card {
+        height: 45vw;
+        width: 31%;
+        padding: 2%;
+    }
+
+
+    .card h6 {
+        font-size: 1.7vw;
+        padding: 0.5vw 0.8vw;
+        border-radius: 1vw;
+    }
+    
+    .card h5 {
+        font-size: 2.5vw;
+        font-weight: 900;
+        padding: 0;
+    }
+    
+    .card p {
+        font-size: 2vw;
+        width: 135%;
+    }
+
+    .cardHeading button {
+        font-size: 2vw;    
+        padding: 1.5vw 2.5vw;
+    }
+
+}
+
+
+
+
+
+
+@media only screen and (max-width: 660px) {
+
+    .card {
+        height: 65vw;
+        width: 48.5%;
+        padding: 2%;
+    }
+
+
+    .card h6 {
+        font-size: 2.7vw;
+        padding: 0.7vw 1vw;
+        border-radius: 1vw;
+    }
+    
+    .card h5 {
+        font-size: 4vw;
+        font-weight: 900;
+        padding: 0;
+    }
+    
+    .card p {
+        font-size: 2.5vw;
+        width: 135%;
+    }
+
+    .cardHeading button {
+        font-size: 3.5vw;    
+        padding: 2vw 3vw;
+    }
+
+}
